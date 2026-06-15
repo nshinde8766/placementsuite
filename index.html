@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlacementWay - AI-Powered Campus Recruitment & Placement Ecosystem</title>
+  <meta name="description" content="Accelerate your campus placement cycles. AI-powered resume screening, interactive mock interviews, recruiter matching, and real-time dashboard analytics.">
+  <link rel="stylesheet" href="index.css">
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- Glow Background Orbs -->
+  <div class="bg-glow-wrapper">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>PlacementWay
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#suite">Placement Suite</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#portal">Live Portal</a></li>
+          <li><a href="#interview">AI Interviewer</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button class="btn btn-secondary">Log In</button>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Bridge the Gap Between <span class="gradient-text">Campus & Career</span></h1>
+        <p>Accelerate placement drives with our comprehensive ecosystem. Prepare candidates with AI mock interviews, verify skills instantly, and connect top recruiters directly with student profiles.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="window.location.href='#interview'">Try AI Interview Free</button>
+          <button class="btn btn-secondary" onclick="window.location.href='#portal'">Explore Live Portal</button>
+        </div>
+        <div class="hero-ratings">
+          <div class="rating-item">
+            <span class="rating-num">98.4%</span>
+            <span class="rating-label">Placement Success Rate</span>
+          </div>
+          <div class="rating-item">
+            <span class="rating-num">500+</span>
+            <span class="rating-label">Top Hiring Companies</span>
+          </div>
+          <div class="rating-item">
+            <span class="rating-num">1.4M+</span>
+            <span class="rating-label">Avg. Salary Packages</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-showcase">
+        <div class="hero-glow-back"></div>
+        <!-- Interactive candidate card preview -->
+        <div class="interactive-card">
+          <div class="card-header">
+            <div class="avatar">JD</div>
+            <div class="profile-info">
+              <h3>Jane Doe</h3>
+              <p>Stanford University • Computer Science</p>
+            </div>
+            <span class="badge">Google Hire</span>
+          </div>
+          
+          <div class="card-stats">
+            <div class="stat-box">
+              <span class="stat-label">Coding Readiness</span>
+              <span class="stat-value" style="color: #10b981;">96%</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">AI Interview Score</span>
+              <span class="stat-value" style="color: #6366f1;">92/100</span>
+            </div>
+          </div>
+          
+          <div class="card-footer">
+            <div class="matching-meter">
+              <span class="stat-label">Company Fit</span>
+              <div class="meter-track">
+                <div class="meter-fill" style="width: 94%;"></div>
+              </div>
+              <span class="stat-value" style="font-size: 13px;">94%</span>
+            </div>
+            <span style="color: var(--text-muted); font-size: 12px;">Rank #4 in Batch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placement Suite (Tabbed Switcher) -->
+  <section class="container" id="suite" style="padding: 80px 0;">
+    <div class="section-header">
+      <h2>The Complete Placement Suite</h2>
+      <p>Custom tailored tools for students, recruiters, and university administration all unified on one single dashboard.</p>
+      <div class="underline-glow"></div>
+    </div>
+    
+    <div class="tabs-container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="students-tab">For Students</button>
+        <button class="tab-btn" data-tab="recruiters-tab">For Recruiters</button>
+        <button class="tab-btn" data-tab="colleges-tab">For Colleges</button>
+      </div>
+      
+      <!-- Students Tab -->
+      <div class="tab-pane active" id="students-tab">
+        <div class="pane-content">
+          <h3>Supercharge Your Career Preparation</h3>
+          <p>Get access to automated preparation suites designed to land jobs at tier-1 technology and finance companies.</p>
+          <ul class="pane-list">
+            <li><i data-feather="check"></i> <span>AI Resume Analyzer: Get instant feedback and ATS optimizations.</span></li>
+            <li><i data-feather="check"></i> <span>Dynamic Mock Interviews: Technical & behavioral practice with AI.</span></li>
+            <li><i data-feather="check"></i> <span>Tailored Learning Pathways: Learn concepts that recruiters care about.</span></li>
+            <li><i data-feather="check"></i> <span>Verified Profile Badges: Show off skills directly to hiring managers.</span></li>
+          </ul>
+          <button class="btn btn-primary" onclick="window.location.href='#interview'">Start Practice Session</button>
+        </div>
+        <div class="pane-visual">
+          <svg viewBox="0 0 400 300" width="100%" height="auto" style="border: 1px solid var(--border-color); border-radius:16px; background: rgba(255,255,255,0.01);">
+            <defs>
+              <linearGradient id="svgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.05"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="300" rx="16" fill="url(#svgGrad)"/>
+            <rect x="50" y="40" width="300" height="220" rx="10" fill="#0d111e" stroke="rgba(255,255,255,0.08)"/>
+            <rect x="80" y="80" width="80" height="8" rx="4" fill="#6366f1"/>
+            <rect x="80" y="100" width="160" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+            <rect x="80" y="112" width="200" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+            
+            <circle cx="100" cy="180" r="24" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2"/>
+            <text x="88" y="185" fill="#10b981" font-size="14" font-weight="bold">92%</text>
+            <text x="140" y="182" fill="#fff" font-size="12" font-weight="600">DSA Verified</text>
+            
+            <circle cx="280" cy="80" r="15" fill="#8b5cf6"/>
+            <path d="M276 80l3 3 5-5" stroke="#fff" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Recruiters Tab -->
+      <div class="tab-pane" id="recruiters-tab">
+        <div class="pane-content">
+          <h3>Hire verified talent, instantly.</h3>
+          <p>Skip the initial screening pipeline. Connect with pre-vetted candidates who match your company's technology stack.</p>
+          <ul class="pane-list">
+            <li><i data-feather="check"></i> <span>Automated matching based on GitHub and exam profiles.</span></li>
+            <li><i data-feather="check"></i> <span>1-click campus drive scheduling and slot reservations.</span></li>
+            <li><i data-feather="check"></i> <span>Plagiarism-free live coding assessments.</span></li>
+            <li><i data-feather="check"></i> <span>Customized batch shortlisting widgets.</span></li>
+          </ul>
+          <button class="btn btn-primary" onclick="window.location.href='#portal'">View Recruiter CRM</button>
+        </div>
+        <div class="pane-visual">
+          <svg viewBox="0 0 400 300" width="100%" height="auto" style="border: 1px solid var(--border-color); border-radius:16px; background: rgba(255,255,255,0.01);">
+            <rect width="400" height="300" rx="16" fill="url(#svgGrad)"/>
+            <rect x="40" y="50" width="320" height="200" rx="12" fill="#0d111e" stroke="rgba(255,255,255,0.08)"/>
+            <circle cx="80" cy="90" r="16" fill="rgba(99, 102, 241, 0.15)"/>
+            <rect x="110" y="80" width="100" height="8" rx="4" fill="#fff"/>
+            <rect x="110" y="94" width="70" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+            <rect x="260" y="82" width="70" height="18" rx="9" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1"/>
+            
+            <circle cx="80" cy="140" r="16" fill="rgba(139, 92, 246, 0.15)"/>
+            <rect x="110" y="130" width="100" height="8" rx="4" fill="#fff"/>
+            <rect x="110" y="144" width="70" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+            <rect x="260" y="132" width="70" height="18" rx="9" fill="rgba(99, 102, 241, 0.1)" stroke="#6366f1" stroke-width="1"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Colleges Tab -->
+      <div class="tab-pane" id="colleges-tab">
+        <div class="pane-content">
+          <h3>Elevate Your Institute's Placement Records</h3>
+          <p>Offer a premium placement cell dashboard to manage drives, coordinate interviews, and track placement ratios.</p>
+          <ul class="pane-list">
+            <li><i data-feather="check"></i> <span>Consolidated student placement tracking dashboards.</span></li>
+            <li><i data-feather="check"></i> <span>Automated company invitation and scheduling portals.</span></li>
+            <li><i data-feather="check"></i> <span>Student progress and preparation analytics charts.</span></li>
+            <li><i data-feather="check"></i> <span>NOC (No Objection Certificate) and offer release automation.</span></li>
+          </ul>
+          <button class="btn btn-primary" onclick="window.location.href='#pricing'">Request Demo</button>
+        </div>
+        <div class="pane-visual">
+          <svg viewBox="0 0 400 300" width="100%" height="auto" style="border: 1px solid var(--border-color); border-radius:16px; background: rgba(255,255,255,0.01);">
+            <rect width="400" height="300" rx="16" fill="url(#svgGrad)"/>
+            <rect x="50" y="50" width="300" height="200" rx="12" fill="#0d111e" stroke="rgba(255,255,255,0.08)"/>
+            <path d="M80 200l40-40 30 20 60-70 50 40 40-50" stroke="#6366f1" stroke-width="3" fill="none"/>
+            <circle cx="210" cy="110" r="5" fill="#8b5cf6" stroke="#fff" stroke-width="2"/>
+            <rect x="180" y="65" width="60" height="25" rx="5" fill="#8b5cf6"/>
+            <text x="192" y="81" fill="#fff" font-size="10" font-weight="bold">+28% YoY</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diagonal Cards Grid (Key Features) -->
+  <section class="features-grid-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Unmatched Feature Set</h2>
+        <p>Specially engineered components that make recruitment campaigns seamless and placements fast.</p>
+        <div class="underline-glow"></div>
+      </div>
+      
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="cut-card">
+          <div class="cut-card-icon">
+            <i data-feather="file-text"></i>
+          </div>
+          <h3>AI Resume Builder</h3>
+          <p>Generates ATS-optimized professional resume templates that emphasize skills evaluated by modern hiring systems.</p>
+          <a href="#" class="cut-card-link">Know More <i data-feather="chevron-right"></i></a>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="cut-card">
+          <div class="cut-card-icon">
+            <i data-feather="edit-3"></i>
+          </div>
+          <h3>AI Mock Interviews</h3>
+          <p>Allows mock trials in frontend, backend, product management, and systems. Delivers instant keyword feedback scores.</p>
+          <a href="#" class="cut-card-link">Know More <i data-feather="chevron-right"></i></a>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="cut-card">
+          <div class="cut-card-icon">
+            <i data-feather="shield"></i>
+          </div>
+          <h3>Code Assessments</h3>
+          <p>Rigorous, cheat-proof coding evaluations integrated right within recruiters' screening funnels.</p>
+          <a href="#" class="cut-card-link">Know More <i data-feather="chevron-right"></i></a>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="cut-card">
+          <div class="cut-card-icon">
+            <i data-feather="git-merge"></i>
+          </div>
+          <h3>Smart Job Matcher</h3>
+          <p>Aligns candidates' project histories, skill matrices, and coding profiles directly with open job descriptions.</p>
+          <a href="#" class="cut-card-link">Know More <i data-feather="chevron-right"></i></a>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="cut-card">
+          <div class="cut-card-icon">
+            <i data-feather="trending-up"></i>
+          </div>
+          <h3>Placement Tracker</h3>
+          <p>Real-time analytics for placement officers to watch candidate statuses from application to final offer release.</p>
+          <a href="#" class="cut-card-link">Know More <i data-feather="chevron-right"></i></a>
+        </div>
+        
+        <!-- Card 6 -->
+        <div class="cut-card">
+          <div class="cut-card-icon">
+            <i data-feather="calendar"></i>
+          </div>
+          <h3>Drive Scheduler</h3>
+          <p>Streamlines campus recruitment. Schedule slots, assign recruiters, and distribute assessment tokens instantly.</p>
+          <a href="#" class="cut-card-link">Know More <i data-feather="chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Portal Section (Interactive Dashboard Preview) -->
+  <section class="portal-section" id="portal">
+    <div class="container">
+      <div class="section-header">
+        <h2>Interactive Portal Preview</h2>
+        <p>Check out our dashboard layouts. Toggle roles below to see what students and recruiting partners experience.</p>
+        <div class="underline-glow"></div>
+      </div>
+      
+      <div class="portal-container">
+        <div class="portal-control-header">
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700;">Live Sandbox Dashboard</h3>
+            <p style="font-size: 14px; color: var(--text-secondary); margin-top: 4px;">Click the buttons on the right to toggle recruiter or student metrics.</p>
+          </div>
+          <div class="portal-toggle">
+            <button class="portal-toggle-btn active" data-role="student">Student View</button>
+            <button class="portal-toggle-btn" data-role="recruiter">Recruiter View</button>
+          </div>
+        </div>
+        
+        <!-- Mockup Container -->
+        <div class="dashboard-mockup">
+          <!-- Sidebar -->
+          <div class="mock-sidebar">
+            <div class="mock-sidebar-brand">
+              <span class="logo-dot"></span> StudentPortal
+            </div>
+            <ul class="mock-menu">
+              <li class="active"><i data-feather="layout"></i> My Dashboard</li>
+              <li><i data-feather="briefcase"></i> Search Jobs</li>
+              <li><i data-feather="edit-3"></i> AI Interviews</li>
+              <li><i data-feather="file-text"></i> Resume Builder</li>
+            </ul>
+          </div>
+          
+          <!-- Content Area -->
+          <div class="mock-content">
+            <div class="mock-content-header">
+              <div class="mock-title">My Applications & Metrics</div>
+              <span style="font-size: 12px; color: var(--text-muted);">Last updated: Just now</span>
+            </div>
+            
+            <!-- Statistics Grid -->
+            <div class="mock-grid">
+              <div class="mock-mini-card">
+                <div class="mock-mini-card-label">Profile Score</div>
+                <div class="mock-mini-card-val text-accent" style="color: #10b981;">94%</div>
+              </div>
+              <div class="mock-mini-card">
+                <div class="mock-mini-card-label">Applications</div>
+                <div class="mock-mini-card-val text-primary" style="color: #6366f1;">12</div>
+              </div>
+              <div class="mock-mini-card">
+                <div class="mock-mini-card-label">Interviews</div>
+                <div class="mock-mini-card-val text-primary" style="color: #8b5cf6;">3</div>
+              </div>
+            </div>
+            
+            <!-- Main Details Row -->
+            <div class="mock-main-section">
+              <!-- Job / Candidate list -->
+              <div class="mock-list-card" style="grid-column: span 2;">
+                <div class="mock-list-title">Recent Job Applications</div>
+                <div class="mock-list-container">
+                  
+                  <div class="mock-list-item">
+                    <div class="item-left">
+                      <div class="item-logo" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">G</div>
+                      <div>
+                        <div class="item-name">Google</div>
+                        <div class="item-subtext">Software Engineer Intern</div>
+                      </div>
+                    </div>
+                    <span class="mock-status success">Offer Released</span>
+                  </div>
+                  
+                  <div class="mock-list-item">
+                    <div class="item-left">
+                      <div class="item-logo" style="background: rgba(99, 102, 241, 0.1); color: #6366f1;">M</div>
+                      <div>
+                        <div class="item-name">Microsoft</div>
+                        <div class="item-subtext">Associate Software Engineer</div>
+                      </div>
+                    </div>
+                    <span class="mock-status warning">Interview Scheduled</span>
+                  </div>
+                  
+                  <div class="mock-list-item">
+                    <div class="item-left">
+                      <div class="item-logo" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;">S</div>
+                      <div>
+                        <div class="item-name">Stripe</div>
+                        <div class="item-subtext">Frontend Engineer</div>
+                      </div>
+                    </div>
+                    <span class="mock-status success">Resume Shortlisted</span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Mock Interview Simulator Widget -->
+  <section class="container" id="interview" style="padding: 80px 0;">
+    <div class="section-header">
+      <h2>AI Interview Simulator</h2>
+      <p>Select a career track, read the interviewer's question, type your response, and get immediate feedback evaluated by our mock scoring engine.</p>
+      <div class="underline-glow"></div>
+    </div>
+    
+    <div class="ai-interviewer-card">
+      <div class="ai-header">
+        <div class="ai-pulse-dot"></div>
+        <span style="font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">AI Placement Evaluator Active</span>
+      </div>
+      
+      <div class="topic-selector">
+        <div class="topic-tag active" data-topic="software">Software Engineering</div>
+        <div class="topic-tag" data-topic="frontend">Frontend Engineering</div>
+        <div class="topic-tag" data-topic="product">Product Management</div>
+        <div class="topic-tag" data-topic="datascience">Data Science</div>
+      </div>
+      
+      <div class="interview-console">
+        <div class="console-question">
+          What is the difference between SQL and NoSQL databases, and when would you choose one over the other?
+        </div>
+        
+        <div class="console-input-area">
+          <textarea class="console-input" placeholder="Type your detailed interview answer here... (Tip: include key structural definitions, scalability models, and performance considerations)"></textarea>
+        </div>
+        
+        <!-- Score Feedback box -->
+        <div class="console-feedback">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      
+      <div style="text-align: right;">
+        <button class="btn btn-primary" id="evaluate-btn">Evaluate Response</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Counter Banner -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-num" data-target="15000">0</span>
+        <span class="stat-name">Students Placed</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="180">0</span>
+        <span class="stat-name">Partner Universities</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="98">0</span>
+        <span class="stat-name">Placement Rate %</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="45">0</span>
+        <span class="stat-name">LPA Highest Package</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Volume Calculator -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Simple, Flexible Pricing</h2>
+        <p>Select your college's graduation batch size to estimate monthly operational licenses.</p>
+        <div class="underline-glow"></div>
+      </div>
+      
+      <div class="pricing-calc-box">
+        <div class="calc-title">Batch License Calculator</div>
+        
+        <div class="slider-group">
+          <div class="slider-label">
+            <span>Graduating Students</span>
+            <span id="students-count">100</span>
+          </div>
+          <input type="range" id="students-slider" min="100" max="10000" step="50" value="1200">
+        </div>
+        
+        <div class="calc-result">
+          <div class="result-label">Estimated Monthly Subscription</div>
+          <div class="result-price" id="price-result">$1,800</div>
+        </div>
+        
+        <button class="btn btn-primary" style="width: 100%;">Deploy Campus License</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <a href="#" class="logo" style="margin-bottom: 16px;">
+          <span class="logo-dot"></span>PlacementWay
+        </a>
+        <p>Next-generation campus recruitment networks. Connecting graduating classes with fast-growing companies through software and AI.</p>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#suite">Placement Suite</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#portal">Live Portal</a></li>
+          <li><a href="#interview">AI Interviewer</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Interview Preparation</a></li>
+          <li><a href="#">Resume Templates</a></li>
+          <li><a href="#">DSA Guide</a></li>
+          <li><a href="#">Recruiter Portal</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Security Audits</a></li>
+          <li><a href="#">Contact Support</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <span>&copy; 2026 PlacementWay. All rights reserved.</span>
+      <div style="display: flex; gap: 16px;">
+        <a href="#"><i data-feather="github" style="width: 16px; height: 16px;"></i></a>
+        <a href="#"><i data-feather="twitter" style="width: 16px; height: 16px;"></i></a>
+        <a href="#"><i data-feather="linkedin" style="width: 16px; height: 16px;"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
