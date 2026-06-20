@@ -13,9 +13,13 @@ Placement Suite is a comprehensive web-based platform designed to streamline the
 👨‍🎓 Student Module
 
 ✅ Student Registration & Login
+
 ✅ Profile Management
+
 ✅ Browse Available Job Opportunities
+
 ✅ Apply for Jobs
+
 ✅ Track Application Status
 
 
