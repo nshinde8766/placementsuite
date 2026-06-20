@@ -4,7 +4,7 @@
 🎯 Smart Placement Management System for Students, Recruiters & Placement Coordinators
 
 
-##📌 PROJECT OVERVIEW :-
+📌 PROJECT OVERVIEW :-
 
 Placement Suite is a comprehensive web-based platform designed to streamline the campus recruitment process. The system enables students to apply for jobs, companies to manage recruitment drives, and administrators to monitor placement activities through a centralized dashboard.
 
