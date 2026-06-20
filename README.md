@@ -10,6 +10,8 @@ Placement Suite is a comprehensive web-based platform designed to streamline the
 
 
 
+------------------------------------------------------------------------------------------------------------------------------------
+
  ✨ KEY FEATURES
 
 👨‍🎓 Student Module:-
@@ -23,6 +25,7 @@ Placement Suite is a comprehensive web-based platform designed to streamline the
 ✅ Apply for Jobs
 
 ✅ Track Application Status
+
 
 
 
@@ -50,7 +53,7 @@ Placement Suite is a comprehensive web-based platform designed to streamline the
 
 ✅ User Access Control
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 
 🛠️ TECH STACK:-
