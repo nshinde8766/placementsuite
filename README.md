@@ -12,7 +12,7 @@ Placement Suite is a comprehensive web-based platform designed to streamline the
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
- ✨ KEY FEATURES
+## ✨ KEY FEATURES
 
 👨‍🎓 Student Module:-
 
@@ -69,48 +69,42 @@ Version Control   ->  Git, GitHub
 
 
 
+------------------------------------------------------------------------------------------------------------------------------------
 
-🏗️ SYSTEM ARCHITECTURE:-
+## 🏗️ System Architecture
 
+- 👥 Users: Students, Companies, Admins
+  
+- 🎨 Frontend: HTML, CSS, JavaScript
+  
+- ⚙️ Backend: Node.js, Express.js
+  
+- 🗄️ Database: MongoDB
+  
+- 🔄 Communication: Frontend → REST APIs → MongoDB
+  
+- 📊 Output: Real-time data retrieval and management
 
- ┌─────────────────────┐
- │ Student / Company   │
- │      / Admin        │
- └──────────┬──────────┘
-            │
-            ▼
- ┌─────────────────────┐
- │    Frontend UI      │
- │ HTML • CSS • JS     │
- └──────────┬──────────┘
-            │
-            ▼
- ┌─────────────────────┐
- │  Node.js + Express  │
- │      REST APIs      │
- └──────────┬──────────┘
-            │
-            ▼
- ┌─────────────────────┐
- │      MongoDB        │
- │      Database       │
- └─────────────────────┘
-
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 📂 PROJECT STRUCTURE:-
 
 
-placementsuite
-│
-├── index.html
-├── index.css
-├── main.js
-├── package.json
-├── package-lock.json
-└── README.md
+placementsuite:-
 
+index.html
 
+index.css
+
+main.js
+
+package.json
+
+package-lock.json
+
+README.md
+
+------------------------------------------------------------------------------------------------------------------------------------
 
 ⚙️ INSTALLATION GUIDE:-
 
@@ -134,6 +128,7 @@ npm install
 npm start
 
 
+------------------------------------------------------------------------------------------------------------------------------------
 
 📈 PROJECT HIGHLIGHTS:-
 
@@ -149,6 +144,7 @@ npm start
 
 ⚡ Fast & Responsive User Interface
 
+------------------------------------------------------------------------------------------------------------------------------------
 
 🎯 SKILLS DEMONSTRATED:-
 
@@ -168,6 +164,7 @@ npm start
   
 * Software Architecture
 
+------------------------------------------------------------------------------------------------------------------------------------
 
 🔮 FUTURE ENHANCEMENTS :-
 
